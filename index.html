@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css file -->
+  <link rel="stylesheet" href="main-page.css">
+  <!-- normalize file -->
+  <link rel="stylesheet" href="one-for-all-css/normalize.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="one-for-all-css/all.min.css">
+  <!-- More Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+  <!-- Frame Work -->
+  <link rel="stylesheet" href="one-for-all-css/frame-work.css">
+  <title>الصفحه الرئيسيه</title>
+</head>
+<body dir="rtl">
+  <!-- Start Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="../main-imgs/logo.png" alt=""></a>
+      <ul class="links">
+        <li><a href="../القرأن/quran.html">القرآن</a></li>
+        <li onclick="displayMessage()"><a href="#">الحديث</a></li>
+        <li><a href="../صفحات_الذكر/zekr.html">الأذكار</a></li>
+        <li onclick="displayMessage()"><a href="#">قصص الأنبياء</a></li>
+      </ul>
+      <div class="toggle"></div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start after Header -->
+  <div class="after-header">
+    <div class="container">
+      <div class="cont">
+        <h2>بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</h2>
+      </div>
+    </div>
+  </div>
+  <div class="Date">
+    <div id="hijri-date"></div>
+    <img src="main-imgs/hijri-bg.jpg" alt="">
+  </div>
+  <!-- End after Header -->
+  <!-- Start Mini Header -->
+  <div class="mini-header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="../main-imgs/logo.png" alt=""></a>
+      <div class="mini-toggle"></div>
+    </div>
+  </div>
+  <!-- End Mini Header -->
+  <!-- Start Down bar -->
+  <div class="nav-bar">
+    <div class="container">
+      <ul>
+        <li class="list">
+          <a href="../القرأن/quran.html">
+            <span class="icon">
+              <img src="main-imgs/quran.png" alt="">
+            </span>
+            <span class="text">القرآن</span>
+          </a>
+        </li>
+        <li class="list" onclick="displayMessage()">
+          <a href="#">
+            <span class="icon">
+              <img src="main-imgs/sunnah.png" alt="">
+            </span>
+            <!-- <span class="text">الحديث</span> -->
+          </a>
+        </li>
+        <li class="list">
+          <a href="صفحات_الذكر/zekr.html">
+            <span class="icon">
+              <img src="main-imgs/praying.png" alt="">
+            </span>
+            <span class="text">الأذكار</span>
+          </a>
+        </li>
+        <li class="list" onclick="displayMessage()">
+          <a href="#">
+            <span class="icon">
+              <img src="../main-imgs/stories.png" alt="">
+            </span>
+            <!-- <span class="text">قصص</span> -->
+          </a>
+        </li>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+  </div>
+  <!-- End Down bar -->
+  <!-- Alarm -->
+  <div id="overlay">
+    <div id="alert">
+      <p>سيتوفر هذا القسم قريبا.</p>
+    </div>
+  </div>
+
+  <!-- Start Shortcuts -->
+  <div class="shorts">
+    <div class="container">
+      <div class="cont">
+        <a href="../القرأن/quran.html">
+          <div class="image">
+            <img src="main-imgs/quran.png">
+          </div>
+          <h4>القرآن الكريم</h4>
+        </a>
+      </div>
+      <div class="cont">
+        <a href="#" onclick="displayMessage()">
+          <div class="image">
+            <img src="main-imgs/sunnah.png">
+          </div>
+          <h4>أحاديث الرسول</h4>
+        </a>
+      </div>
+      <div class="cont">
+        <a href="صفحات_الذكر/zekr.html">
+          <div class="image">
+            <img src="main-imgs/praying.png">
+          </div>
+          <h4>الأذكار</h4>
+        </a>
+      </div>
+      <div class="cont">
+        <a href="#" onclick="displayMessage()">
+          <div class="image">
+            <img src="main-imgs/stories.png">
+          </div>
+          <h4>قصص الأنبياء</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Shortcuts -->
+  <!-- Start Cards -->
+  <div class="cards">
+    <!-- <div class="container">
+      
+    </div> -->
+    <div class="hijri-date">
+      <div id="hijri-date-2"></div>
+    </div>
+    <div class="next-prayer">
+      <div id="next-prayer"></div>
+    </div>
+    <div class="Elct-seb7a">
+      
+    </div>
+  </div>
+  <!-- End Cards -->
+  <script src="script.js"></script>
+</body>
+</html>
